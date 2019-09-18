@@ -1,0 +1,434 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.4;
+  font-size: 16px;
+  color: #000000;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// NAV BAR STYLING..........................
+
+.nav-container {
+  background: #cecbda;
+  color: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3% 5% 0;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .nav-logo {
+    margin: 0 15px 0 0;
+  }
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    .nav-link {
+      padding: 13px 18px;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        color: #5d2bff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .nav-subscribe {
+    a {
+      color: #000000;
+      margin: 0 24px 0 0;
+      margin-right: 1.2em;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        color: #5d2bff;
+      }
+    }
+    button {
+      color: #5d2bff;
+      padding: 0.6em 1.8em;
+      border: 1px solid #5d2bff;
+      background: transparent;
+      border-radius: 1.2em;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        background: #5d2bff;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// HEADER HERO STYLING.....................................
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #cecbda;
+
+  .header-h6 {
+    font-size: 22px;
+    margin: 6rem auto 2em;
+    font-weight: 300;
+    text-align: center;
+    max-width: 24em;
+  }
+  .header-h1 {
+    margin: 0 0 0.7em;
+    font-weight: 300;
+    font-size: calc(35.5px + 3.888vw);
+  }
+
+  .header-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header-input {
+      padding: 14.0756px 25.9857px;
+      margin: 0 0 20px;
+      border-radius: 30px;
+      border: none;
+      color: rgb(180, 180, 180);
+      width: 360px;
+      height: 56px;
+      &:hover {
+        box-shadow: #b4b4b4 1px 1px;
+      }
+    }
+    .header-btn {
+      background: #5d2bff;
+      color: #fff;
+      padding: 0.5em 2.5em 0.6em;
+      border-radius: 28px;
+      border: none;
+      box-shadow: 0 0 25px -15px rgba(0, 0, 0, 0.2);
+      width: 250px;
+      height: 56px;
+      &:hover {
+        box-shadow: #b4b4b4 1px 1px;
+        cursor: pointer;
+      }
+    }
+    .header-google {
+      margin: 26px 100px 14px;
+      font-size: 18px;
+    }
+    .header-condition {
+      margin: 30px 0 0;
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.45);
+    }
+    .header-link {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .header-hero {
+    width: 636px;
+    height: 355px;
+    margin-top: 2rem;
+  }
+}
+
+.section-features-container {
+  background: #cecbda;
+  display: flex;
+  flex-direction: column;
+  .section-features-h2 {
+    text-align: center;
+    margin-bottom: 1.4em;
+    line-height: 1.1;
+    clear: both;
+    font-size: 2.7em;
+    font-weight: 400;
+  }
+  .section-features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem 1rem;
+    margin-bottom: 7vw;
+    .section-features-item {
+      max-width: 280px;
+      padding: 0 20px 50px;
+      h4 {
+        text-align: center;
+        margin-bottom: 22px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .section-feature-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6vw;
+    h1 {
+      text-align: center;
+      margin-right: 40px;
+    }
+    button {
+      background: #5d2bff;
+      color: #fff;
+      padding: 0.5em 2.5em 0.6em;
+      border-radius: 28px;
+      border: none;
+      width: 200px;
+      height: 56px;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 25px -15px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+// section testimonials STYLINNNG .......................
+
+.section-testimonials-container {
+  background-color: #ff9643;
+  padding: 6% 5%;
+  display: flex;
+  justify-content: space-around;
+
+  h5 {
+    font-size: 3.331em;
+    padding-right: 4%;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    margin: 0;
+    max-width: 60%;
+    font-weight: 300;
+    flex: 2;
+  }
+
+  .section-testimonials-quote {
+    flex: 1;
+    margin-right: 60px;
+    p {
+      line-height: 1.33333;
+      margin-bottom: 70px;
+
+      font-size: calc(26px + 0.6472vw);
+      font-weight: 200;
+    }
+  }
+
+  .section-testimonials-btn {
+    border-radius: 1.2em;
+    border: 1px solid #0000001a;
+    background-color: transparent;
+    font-size: inherit;
+    line-height: 1;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    height: 155px;
+
+    button {
+      color: #464646;
+      padding: 18px 9px;
+      border: none;
+      margin: auto;
+      border-radius: 30px;
+      background-color: transparent;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .quote-active-btn {
+      background-color: #fff;
+    }
+  }
+}
+
+// CLIENT SECTION STYLINNNG ................................
+.clients-container {
+  background: #ff9643;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem auto;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  img {
+    height: 100%;
+    margin: 3% 5%;
+    width: 7vw;
+    width: calc(100vw / 14);
+  }
+  .clients-box-1 {
+    display: flex;
+    justify-content: space-around;
+    white-space: normal;
+    direction: ltr;
+    align-items: center;
+    animation: rotate 40s linear infinite;
+    will-change: transform;
+  }
+  .clients-box-2 {
+    display: flex;
+    justify-content: space-around;
+    white-space: normal;
+    direction: ltr;
+    align-items: center;
+    animation: rotate 40s linear infinite;
+    will-change: transform;
+    padding-right: 3rem;
+  }
+  .clients-box-3 {
+    display: flex;
+    justify-content: flex-end;
+    white-space: normal;
+    direction: ltr;
+    align-items: center;
+    animation: rotate 40s linear infinite;
+    will-change: transform;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: translateX(66.6666%);
+  }
+}
+
+.signup-cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff9643;
+  overflow: hidden;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  h5 {
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.4em;
+    font-weight: 400;
+    font-size: calc(21.5px + 3.56vw);
+  }
+  .signup-cta-free {
+    font-size: calc(17.5px + 0.65vw);
+    margin-bottom: 4vw;
+  }
+  .signup-cta-input {
+    padding: 14.0756px 25.9857px;
+    margin: 0 0 20px;
+    border-radius: 30px;
+    border: none;
+    color: rgb(180, 180, 180);
+    width: 360px;
+    height: 56px;
+    &:hover {
+      box-shadow: #b4b4b4 1px 1px;
+    }
+  }
+  .signup-cta-btn {
+    background: #5d2bff;
+    color: #fff;
+    padding: 0.5em 2.5em 0.6em;
+    border-radius: 28px;
+    border: none;
+    box-shadow: 0 0 25px -15px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 56px;
+
+    &:hover {
+      box-shadow: #b4b4b4 1px 1px;
+      cursor: pointer;
+    }
+  }
+  .signup-cta-google {
+    margin: 26px 100px 14px;
+    font-size: 18px;
+    color: #000000;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .signup-cta-condition {
+    margin: 0 auto;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.45);
+  }
+  .signup-cta-link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// FOOOOOTER STYLING........................
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #cecbda;
+  padding: 5% 5%;
+  color: #fff;
+
+  .footer-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    .footer-menu-item {
+      flex: 4;
+      display: flex;
+      justify-content: space-around;
+      letter-spacing: 0.01em;
+      line-height: 1.6;
+      font-size: calc(17.5px + 0.65vw);
+      li:first-child {
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1.5em;
+        letter-spacing: 0.01em;
+        line-height: 1.6;
+      }
+    }
+    .footer-menu-socials {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 2rem;
+      margin-bottom: 1.5em;
+      .footer-socials {
+        color: #fff;
+        padding: 0.5rem;
+      }
+    }
+  }
+  .footer-copyright {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+}
