@@ -12,6 +12,7 @@
     ></script>
   </head>
   <body>
+    <!-- NAVIGATION BAR -->
     <nav class="nav-container">
       <h2 class="nav-logo">ActiveCollab</h2>
       <ul class="nav-links">
@@ -24,8 +25,16 @@
         <a href="#">Log In</a>
         <button>Get Started</button>
       </div>
-    </nav>
 
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <!-- END OF NAVIGATION BAR -->
+
+    <!-- HEADER CTA INCLUDING HERO IMG -->
     <header class="header-container">
       <h6 class="header-h6">
         ActiveCollab is the project management software that gives you complete
@@ -33,8 +42,10 @@
       </h6>
       <h1 class="header-h1">Make Real Work Happen.</h1>
       <div class="header-cta">
-        <input class="header-input" type="text" value="Your work email" />
-        <button class="header-btn">Get Started</button>
+        <div class="header-cta-responsive">
+          <input class="header-input" type="text" value="Your work email" />
+          <button class="header-btn">Get Started</button>
+        </div>
         <a class="header-google" href="#">or Sign Up with Google</a>
         <p class="header-condition">
           By signing up you are agreeing to the ActiveCollab
@@ -50,7 +61,8 @@
         alt="people repairing small plane"
       />
     </header>
-
+    <!-- END HEADER CTA INCLUDING HERO IMG -->
+    <!-- FEATURES, Currently 4 total -->
     <section class="section-features-container">
       <h2 class="section-features-h2">
         <strong>ActiveCollab</strong> is your workspace.
@@ -95,31 +107,38 @@
         <button>Get Started</button>
       </div>
     </section>
+    <!-- END OF FEATURES, Currently 4 total -->
 
+    <!-- TESTIMONIALS SECTION -->
     <section class="section-testimonials-container">
       <h5>
         For over a decade, more than 50,000 teams made Real Work happen with
         ActiveCollab.
       </h5>
       <div class="section-testimonials-quote">
-        <p>
-          What struck me was the simplicity of it. I had always thought the
-          whole point of a project management tool was to make it easier to
-          manage a project. But it seemed like a lot of them did anything but.
-          ActiveCollab is different. <br />
-        </p>
+        <div class="section-testimonials-box">
+          <p>
+            What struck me was the simplicity of it. I had always thought the
+            whole point of a project management tool was to make it easier to
+            manage a project. But it seemed like a lot of them did anything but.
+            ActiveCollab is different. <br />
+          </p>
+          <span class="section-testimonials-btn"
+            ><button class="quote-active-btn">1</button>
+            <button>2</button>
+            <button>3</button>
+          </span>
+        </div>
+
         <span
           ><strong>Izaak Crook</strong> <br />
           Digital Marketing Executive @ AppInstitute</span
         >
       </div>
-      <span class="section-testimonials-btn"
-        ><button class="quote-active-btn">1</button>
-        <button>2</button>
-        <button>3</button>
-      </span>
     </section>
+    <!-- END OF TESTIMONIALS SECTION -->
 
+    <!-- LIST OF CLIENT LOGO -->
     <section class="clients-container">
       <div class="clients-box-1">
         <img src="./static/1stunited.svg" alt="" />
@@ -182,7 +201,9 @@
         <img src="./static/thyssenkrupp.svg" alt="" />
       </div>
     </section>
+    <!-- END OF LIST OF CLIENT LOGO -->
 
+    <!-- SIGNUP CTA, START FOR FREE SECTION -->
     <section class="signup-cta-container">
       <h5>Make Real Work Happen.</h5>
       <p class="signup-cta-free">Start your free trial.</p>
@@ -195,7 +216,9 @@
         <a class="signup-cta-link" href="#">Privacy Policy</a>
       </p>
     </section>
+    <!-- END OF SIGNUP CTA, START FOR FREE SECTION -->
 
+    <!-- FOOTER SECTION -->
     <footer class="footer-container">
       <h4>ActiveCollab</h4>
       <div class="footer-menu">
@@ -246,6 +269,7 @@
         <p>Copyright © 2007-2019 ActiveCollab</p>
       </div>
     </footer>
+    <!-- END OF FOOTER SECTION -->
     <script src="./app.js"></script>
   </body>
 </html>

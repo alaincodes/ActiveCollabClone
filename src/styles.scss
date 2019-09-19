@@ -43,6 +43,7 @@ ul {
   .nav-logo {
     margin: 0 15px 0 0;
   }
+
   .nav-links {
     display: flex;
     list-style-type: none;
@@ -80,6 +81,19 @@ ul {
       }
     }
   }
+
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+    margin: 5px;
+    transition: all 0.3 ease;
+  }
 }
 
 // HEADER HERO STYLING.....................................
@@ -98,7 +112,6 @@ ul {
     max-width: 24em;
   }
   .header-h1 {
-    margin: 0 0 0.7em;
     font-weight: 300;
     font-size: calc(35.5px + 3.888vw);
   }
@@ -108,8 +121,7 @@ ul {
     flex-direction: column;
     align-items: center;
     .header-input {
-      padding: 14.0756px 25.9857px;
-      margin: 0 0 20px;
+      margin: 1rem auto;
       border-radius: 30px;
       border: none;
       color: rgb(180, 180, 180);
@@ -126,8 +138,10 @@ ul {
       border-radius: 28px;
       border: none;
       box-shadow: 0 0 25px -15px rgba(0, 0, 0, 0.2);
-      width: 250px;
+      min-width: 250px;
+
       height: 56px;
+      margin: 1rem auto;
       &:hover {
         box-shadow: #b4b4b4 1px 1px;
         cursor: pointer;
@@ -138,7 +152,7 @@ ul {
       font-size: 18px;
     }
     .header-condition {
-      margin: 30px 0 0;
+      margin: 30px auto;
       font-size: 18px;
       color: rgba(0, 0, 0, 0.45);
     }
@@ -149,11 +163,14 @@ ul {
     }
   }
   .header-hero {
-    width: 636px;
+    width: 236px;
+
     height: 355px;
     margin-top: 2rem;
   }
 }
+
+// FEATURES STYLING .................................
 
 .section-features-container {
   background: #cecbda;
@@ -169,7 +186,7 @@ ul {
   }
   .section-features-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin: 1rem 1rem;
     margin-bottom: 7vw;
     .section-features-item {
@@ -238,6 +255,9 @@ ul {
       font-size: calc(26px + 0.6472vw);
       font-weight: 200;
     }
+    .section-testimonials-box {
+      display: flex;
+    }
   }
 
   .section-testimonials-btn {
@@ -280,8 +300,9 @@ ul {
   img {
     height: 100%;
     margin: 3% 5%;
-    width: 7vw;
+    min-width: 7vw;
     width: calc(100vw / 14);
+    width: 100%;
   }
   .clients-box-1 {
     display: flex;
@@ -344,7 +365,7 @@ ul {
     border-radius: 30px;
     border: none;
     color: rgb(180, 180, 180);
-    width: 360px;
+    min-width: 360px;
     height: 56px;
     &:hover {
       box-shadow: #b4b4b4 1px 1px;
@@ -357,7 +378,7 @@ ul {
     border-radius: 28px;
     border: none;
     box-shadow: 0 0 25px -15px rgba(0, 0, 0, 0.2);
-    width: 250px;
+    min-width: 250px;
     height: 56px;
 
     &:hover {
@@ -430,5 +451,56 @@ ul {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 1025px) {
+  .nav-container {
+    justify-content: space-between;
+    .nav-links {
+      display: none;
+    }
+    .nav-subscribe {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+  }
+  // header input and cta column
+  .header-container {
+    .header-cta {
+      .header-input {
+        width: 160px;
+        height: 56px;
+      }
+      .header-btn {
+        min-width: 150px;
+        height: 56px;
+      }
+      .header-cta-responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  // TESTIMONIALS --------------------------------------
+  .section-testimonials-container {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    .footer-menu {
+      flex-direction: column;
+
+      .footer-menu-item {
+        flex-direction: column;
+      }
+      .footer-menu-socials {
+        justify-content: center;
+      }
+    }
+    .footer-copyright {
+      text-align: center;
+    }
+  }
 }
